@@ -1,17 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-header{
+header {
+    padding: 1%;
     background-color: #ffffff;
     position: fixed;
     width: 100%;
@@ -21,27 +22,27 @@ header{
     z-index: 100;
 }
 
-h1{
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
 }
 
-header > a{
+header>a {
     text-decoration: none;
     cursor: pointer;
 }
 
-#menu li{
+#menu li {
     list-style-type: none;
     padding-right: 3%;
 }
 
-#menu li a{
+#menu li a {
     text-decoration: none;
     color: #252528;
 }
 
-nav{
+nav {
     display: block;
     position: absolute;
     background-color: #ffffff;
@@ -53,23 +54,84 @@ nav{
     top: 100%;
 }
 
-nav, #nav-toggle{
+nav,
+#nav-toggle {
     display: none;
 }
 
-#nav-toggle:checked~nav{
+#nav-toggle:checked~nav {
     display: block;
 }
 
-.active{
+#nav-toggle label {
+    font-size: 2.4rem;
+}
+
+.active {
     border-bottom: 1px solid black;
 }
 
-.images-first {
+.images-first>img {
+    margin-top: 50px;
     width: 100%;
-    height: 400px;
-    background-image: url('assets\images\sa1.jpg');
-    background-repeat: no-repeat;
+    height: 300px;
     background-size: contain;
-    border: 1px solid red;
+}
+
+.images-first span {
+    display: block;
+    padding: 5%;
+    border: 1px dashed #4d4438;
+    border-radius: 16px;
+    display: flex;
+    /* Align items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    gap: 10px;
+    /* Add horizontal space between the icon and text */
+}
+
+.fa-earth-asia {
+    margin: 2px;
+    display: inline-block;
+    width: 24px;
+    /* Set the size of the icon */
+    height: 24px;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #header_logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    .images-first>img {
+        width: 80%;
+        margin: 2% auto;
+        height: 300px;
+    }
+
 }
