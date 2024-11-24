@@ -4,28 +4,12 @@
     box-sizing: border-box;
 }
 
-header{
-    padding: 1%;
-    width: 100%;
-    background-color: bisque;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(212, 154, 38);
-}
-
 body{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: aliceblue;
+
 }
 
-header h1{
-    text-align: center;
-    margin: 20px auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-nav{
-    align-self: center;
-}
