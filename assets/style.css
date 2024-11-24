@@ -14,6 +14,10 @@ header{
     background-color: rgb(212, 154, 38);
 }
 
+body{
+    display: flex;
+}
+
 header h1{
     text-align: center;
     margin: 20px auto;
@@ -21,6 +25,5 @@ header h1{
 }
 
 nav{
-    display: flex;
-    flex-direction: column;
+    align-self: center;
 }
