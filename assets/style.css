@@ -7,6 +7,11 @@ header{
     padding: 1%;
     width: 100%;
     background-color: bisque;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 154, 38);
 }
 
 header h1{
