@@ -9,7 +9,19 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-color: aliceblue;
-
 }
 
+header{
+    margin: 5pt auto;
+    background-color: beige;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+header > a{
+    text-decoration: none;
+    cursor: pointer;
+}
